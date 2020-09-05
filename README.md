@@ -32,5 +32,12 @@ CREATE VIEW todas_as_cidades AS SELECT nome, populacao, altitude FROM capitais
 UNION SELECT nome, população, altitude FROM interior
 ```
 ```sql
-CREATE TABLE IF NOT EXISTS capitais_heranca( estado varchar(2) )INHERITS (interior);
+CREATE TABLE IF NOT EXISTS capitais_heranca( 
+estado varchar(2) )
+INHERITS (interior);
+```
+```sql
+INSERT INTO CAPITAIS_HERANCA (NOME, POPULAçãO, ALTITUDE, ESTADO) VALUES
+('FORTALEZA', 500000, 500, 'CE'), ('NATAL', 2000000, 700, 'RN'), 
+('SÃO PAULO', 500000, 500, 'SP'), ('RIO DE JANEIRO', 250000, 200, 'RJ');
 ```
