@@ -16,3 +16,8 @@ CREATE TABLE IF NOT EXISTS interior(
 	altitude int
 );
 ```
+```sql
+INSERT INTO capitais (NOME, POPULACAO, ALTITUDE, ESTADO) VALUES
+('FORTALEZA', 500000, 500, 'CE'), ('NATAL', 2000000, 700, 'RN'),
+('SÃO PAULO', 500000, 500, 'SP'), ('RIO DE JANEIRO', 250000, 200, 'RJ');
+```
