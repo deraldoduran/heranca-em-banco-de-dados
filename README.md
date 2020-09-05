@@ -31,3 +31,6 @@ INSERT INTO interior (nome, população, altitude) VALUES
 CREATE VIEW todas_as_cidades AS SELECT nome, populacao, altitude FROM capitais 
 UNION SELECT nome, população, altitude FROM interior
 ```
+```sql
+CREATE TABLE IF NOT EXISTS capitais_heranca( estado varchar(2) )INHERITS (interior);
+```
