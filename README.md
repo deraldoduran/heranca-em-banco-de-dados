@@ -27,3 +27,7 @@ INSERT INTO interior (nome, população, altitude) VALUES
 ('BANABUIÚ', 10000, 100), ('ACOPIARA', 40000, 1500), ('PIRIPIRI', 15000, 500), 
 ('PINDAMONHAGABA', 300000, 1200), ('CANINDÉ', 500000, 300);
 ```
+```sql
+CREATE VIEW todas_as_cidades AS SELECT nome, populacao, altitude FROM capitais 
+UNION SELECT nome, população, altitude FROM interior
+```
