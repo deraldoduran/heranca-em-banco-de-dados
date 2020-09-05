@@ -41,3 +41,9 @@ INSERT INTO CAPITAIS_HERANCA (NOME, POPULAçãO, ALTITUDE, ESTADO) VALUES
 ('FORTALEZA', 500000, 500, 'CE'), ('NATAL', 2000000, 700, 'RN'), 
 ('SÃO PAULO', 500000, 500, 'SP'), ('RIO DE JANEIRO', 250000, 200, 'RJ');
 ```
+```sql
+select * from interior; --mostra todas as cidades as do interior e capital_heranca
+```
+```sql
+select * from only interior; --mostra somente as cidades do interior as quais capital_heranca herdou
+```
