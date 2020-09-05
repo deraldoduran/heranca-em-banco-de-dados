@@ -9,3 +9,10 @@ CREATE TABLE IF NOT EXISTS capitais(
 	estado CHAR(2)
 );
 ```
+```sql
+CREATE TABLE IF NOT EXISTS interior(
+	nome VARCHAR(30),
+	população NUMERIC(10,2),
+	altitude int
+);
+```
